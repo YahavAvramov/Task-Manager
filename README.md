@@ -5,7 +5,7 @@ Each task is equipped with detailed information such as creator, department, sta
 ## Project layers
 the task management application features a client-side built-in Angular and is coded in TypeScript.
 
-The server side is simulation by JSON-server, that also provides data storage for user information and task details.
+The server side is simulation by Json-server, that also provides data storage for user information and task details.
 
 In the file `src\app\Service\web.service.ts` is the service that is responsible for communication between the Json server and the user UI. \
 its allows the user to receive information and change information from that Json server.
