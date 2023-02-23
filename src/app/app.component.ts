@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -8,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Task-Manager';
+ 
+  constructor(private responsive:BreakpointObserver) { }
+
+  OnInit(){
+this.responsive.observe([
+  Breakpoints.TabletPortrait,
+  Breakpoints.TabletLandscape,
+  Breakpoints.HandsetPortrait,
+  Breakpoints.HandsetLandscape
+])
+.subscribe()
+  }
 }

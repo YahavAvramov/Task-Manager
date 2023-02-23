@@ -12,6 +12,7 @@ import { MakeNewTaskComponent } from './Components/Pages/make-new-task/make-new-
 import { FormsModule} from '@angular/forms';
 import { TasksShowComponent } from './Components/Pages/tasks-show/tasks-show.component';
 import { EditFormComponent } from './Components/Pages/edit-form/edit-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -34,7 +35,8 @@ const routes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
    
   ],
   providers: [HttpClient],
